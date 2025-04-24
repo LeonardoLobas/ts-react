@@ -1,20 +1,10 @@
-import React from "react";
 import "./main.css";
-import Button from "./Button";
+import Input from "./Input";
 
 function App() {
-    const [total, setTotal] = React.useState(0);
-
-    function incrementar() {
-        setTotal(() => total + 1);
-    }
-
     return (
         <div>
-            {total}
-            <Button onClick={incrementar} tamanho="1.25rem">
-                Incrementar
-            </Button>
+            <Input id="email" label="Email" type="email" />
         </div>
     );
 }
